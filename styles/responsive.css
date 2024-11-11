@@ -1,0 +1,303 @@
+/* Small Devices (Mobile Phones) */
+@media (max-width: 500px) {
+    /* Header adjustments */
+    .header {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+
+    .right-section {
+        position: fixed;
+        left: -150%;
+        top: 140px;
+        bottom: 200px;
+        gap:0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .logo{
+        padding-left: 5px;
+    }
+
+    .right-section.active{
+        left: 0;
+    }
+
+    .left-section{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-links {
+        font-size: 16px;
+        padding: 5px;
+        margin: 16px 0;
+    }
+
+    .header-links-container{
+        animation: none;
+    }
+
+    .header-links:active{
+        color: lightcoral;
+    }
+
+    .hamburger{
+        display: block;
+        margin-right: 25px;
+        margin-top: 15px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+        
+    /* Banner adjustments */
+
+    body{
+        padding-top: 130px;
+    }
+
+    .banner-container {
+        height: 510px;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        transition: opacity 1s ease; /* Smooth transition for opacity */
+        opacity: 1; /* Default opacity */
+    }
+
+    .glow-text{
+        font-size: 50px;
+        top: 35%;
+    }
+
+    .banner-button{
+        top: 55%;
+    }
+
+
+    /* Content adjustments */
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container{
+        margin-top: 20px;
+    }
+
+    .content-container{
+        margin-bottom: 80px;
+    }
+
+    /* Information adjustments */
+
+    .information-image{
+        width: 360px;
+        height: 300px;
+    }
+
+    .information-image-container{
+        display: block;
+        flex: 1;
+        padding-left: 28px;
+        padding-right: 10px;
+        padding-top: 80px;
+    }
+
+    .information-text-container{
+        display: block;
+        width: 360px;
+        height: 100px;
+        text-align: center;
+        padding: 10px;
+        padding-left: 28px;
+    }
+
+    .information-section-container{
+        display: block;
+        flex: 1;
+        height: 1000px;
+        margin-top: 10px;
+    }
+
+    /* Instagram adjustments */
+
+    .profile-picture{
+        height: 60px;
+        width: 60px;
+    }
+
+    .profile-picture-container{
+        margin-left: 0px;
+    }
+
+    .follow-button{
+        font-size: 14px;
+    }
+
+    .follow-button-container{
+        margin-left: 45px;
+    }
+
+    .account-name{
+        font-size: 16px;
+    }
+
+
+    
+}
+
+
+@media (max-width: 1334px){
+    .header {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+
+
+    .logo{
+        padding-left: 5px;
+    }
+
+    .right-section.active{
+        left: 0;
+    }
+
+    .left-section{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-links {
+        font-size: 16px;
+        padding: 5px;
+        margin: 16px 0;
+    }
+
+    .header-links-container{
+        animation: none;
+    }
+
+    .header-links:active{
+        color: lightcoral;
+    }
+
+    /* Banner adjustments */
+
+    body{
+        padding-top: 130px;
+    }
+
+    .banner-container {
+        height: 510px;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        transition: opacity 1s ease; /* Smooth transition for opacity */
+        opacity: 1; /* Default opacity */
+    }
+
+    .glow-text{
+        font-size: 50px;
+        top: 35%;
+    }
+
+    .banner-button{
+        top: 55%;
+    }
+
+
+    /* Content adjustments */
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container{
+        margin-top: 20px;
+    }
+
+    .content-container{
+        margin-bottom: 80px;
+    }
+
+    /* Information adjustments */
+
+    .information-image-container {
+        display: flex;
+        flex-direction: column;    /* Stack items vertically */
+        align-items: center;       /* Center-align items horizontally */
+        padding: 5vw 5vw;          /* Responsive padding */
+        text-align: center;        /* Center-align text within the container */
+        box-sizing: border-box;    /* Prevent padding from affecting centering */
+        padding-bottom: 0px;
+    }
+    
+    .information-image {
+        width: 100%;
+        max-width: 460px;          /* Set a maximum width for larger screens */
+        height: auto;              /* Maintain aspect ratio */
+    }
+    
+    .information-text-container {
+        max-width: 480px;          /* Narrower width to allow wrapping */
+        width: 100%;               /* Full width within max-width constraint */
+        padding: 10px;
+        margin: 0 auto;            /* Center the text container itself */
+        text-align: center;        /* Center-align text inside the container */
+        box-sizing: border-box;
+    }
+    
+    .information-section-container{
+        display: block;
+        flex: 1;
+        height: 1100px;
+        margin-top: 10px;
+    }
+
+    /* Instagram adjustments */
+
+    .profile-picture{
+        height: 60px;
+        width: 60px;
+    }
+
+    .profile-picture-container{
+        margin-left: 0px;
+    }
+
+    .follow-button{
+        font-size: 14px;
+    }
+
+    .follow-button-container{
+        margin-left: 45px;
+    }
+
+    .account-name{
+        font-size: 16px;
+    }
+}
